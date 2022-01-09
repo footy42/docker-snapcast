@@ -1,8 +1,8 @@
-FROM ubuntu:16.04
+FROM ubuntu:latest
 
 RUN apt-get update && apt-get install wget -y
 
-ARG SNAPCASTVERSION=0.15.0
+ARG SNAPCASTVERSION=0.26.0-1
 
 RUN wget 'https://github.com/badaix/snapcast/releases/download/v'$SNAPCASTVERSION'/snapserver_'$SNAPCASTVERSION'_amd64.deb'
 
