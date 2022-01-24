@@ -5,14 +5,14 @@ services:
       context: ../.
       dockerfile: DockerfileServerRPI
       args:
-        SNAPCASTVERSION: 0.11.1
+        SNAPCASTVERSION: 0.26.0
 
   snapclient:
     build:
       context: ../.
       dockerfile: DockerfileClientRPI
       args:
-        SNAPCASTVERSION: 0.11.1
+        SNAPCASTVERSION: 0.26.0
     links:
      - snapserver:snapserverhost
     devices:
